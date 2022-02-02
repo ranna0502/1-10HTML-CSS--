@@ -4,91 +4,93 @@
   box-sizing: border-box;
 }
 
-header{
+header {
   height: 50px;
-  background-color: #FF9A4B;
+  background-color: #ff9a4b;
 }
 
-main{
+main {
   width: 960px;
   margin: 50px auto;
   display: flex;
 }
 
-.section{
+.section {
   width: 300px;
-  background-color: #EEEEEE;
-  padding:10px; 
-  position: relative; 
+  background-color: #eeeeee;
+  padding: 10px;
+  position: relative;
   margin-right: 30px;
 }
 
-.section:last-child{
+.section:last-child {
   margin-right: 0;
 }
 
-.section-img1{
+.section-img1 {
   height: 150px;
   background-image: url(img/flow01.png);
   background-position: bottom;
   background-size: cover;
 }
 
-.section-img2{
+.section-img2 {
   height: 150px;
   background-image: url(img/flow02.png);
   background-position: bottom;
   background-size: cover;
 }
 
-.section-img3{
+.section-img3 {
   height: 150px;
   background-image: url(img/flow03.png);
   background-position: bottom;
   background-size: cover;
 }
 
-.section-title{
-  margin:15px 0 5px;
+.section-title {
+  margin: 15px 0 5px;
 }
 
-span{
-  background-color: #FF9A4B;
+span {
+  background-color: #ff9a4b;
   color: white;
   position: absolute; /*stepの位置の調整*/
   top: 0;
   left: 0;
 }
 
-
-footer{
+footer {
   height: 50px;
-  background-color: #AAAAAA;
+  background-color: #aaaaaa;
 }
 
 @media screen and (max-width: 768px) {
-  header{
-    width: 100%; /*レスポンシブの幅に合わせる*/
+  header {
+    width: 100%;
   }
 
-  main{
-    width: 100%;　/*レスポンシブの幅に合わせる*/
-    display: block; /*ブロック要素にして縦並びにする*/
+  main {
+    width: 100%;
+    display: block;
+    font-size: 12px;
   }
 
-  .section{
+  .section {
     width: 90%; /*横幅90%*/
     margin: 0 auto; /*中央に配置する*/
   }
 
   .section:first-child,
-  .section:nth-last-child(2){
+  .section:nth-last-child(2) {
     margin-bottom: 20px; /*Step1,2のsectionクラスにのみ下側に20px*/
   }
 
-  .section:last-child{
+  .section:last-child {
     margin-right: auto; /*margin-right:0;の打ち消し*/
   }
 
+  footer {
+    width: 100%;
+  }
 }
-
